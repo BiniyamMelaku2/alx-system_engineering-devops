@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -al -R ./ "$(cd -P "$(dirname "/*")/";pwd)" /boot/   
+ls -la . .. /boot   
