@@ -1,0 +1,49 @@
+#!/usr/bin/env bash
+# a Bash (init) script 101-manage_my_process that manages manage_my_process
+
+$num_args;
+$file_name;
+$ppid;
+$c;
+c=0
+num_args=${#@}
+if ((num_args == 0)) || ((num_args > 1));
+then
+    echo "Usage: manage_my_process {start|stop|restart}"
+exit;
+fi    
+file_name="/var/run/my_process.pid"
+stopfn()
+{
+if [[ -e $file_name ]];
+then
+ppid=$(cat $file_name)
+kill "$ppid"
+rm /var/run/my_process.pid
+fi
+}
+
+startfn()
+{
+nohup ./manage_my_process > /dev/null 2>1 &
+echo "$!" > $file_name
+}
+
+case "$1" in
+    stop)
+         echo "manage_my_process stopped"
+         stopfn
+         ;;
+    start)
+         startfn
+         echo "manage_my_process started"
+         ;;
+    restart)
+         stopfn
+         startfn
+         echo "manage_my_process restarted"
+         ;;
+         *)
+         echo "Usage: manage_my_process {start|stop|restart}"
+         ;;
+esac      
