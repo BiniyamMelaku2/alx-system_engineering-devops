@@ -41,7 +41,7 @@ In this project we will mainly focus on:
 
   The image bellow describes more concretely how you can relate to every level.
 
-<img src="/images/relateosi.jpg" border="0">
+<img src="https://github.com/BiniyamMelaku2/alx-system_engineering-devops/blob/main/0x07-networking_basics/images/relateosi.jpg" border="0">
 
   Questions:
 
