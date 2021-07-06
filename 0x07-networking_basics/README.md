@@ -32,8 +32,9 @@ It is organized from the lowest level to the highest level:
   * The highest level: layer 7 which is for application specific communication like SNMP for emails, HTTP for your web browser, etc
 Keep in mind that the OSI model is a concept, it’s not even tangible. The OSI model doesn’t perform any functions in the networking process. It is a conceptual framework so we can better understand complex interactions that are happening. Most of the functionality in the OSI model exists in all communications systems.
 
-![what is OSI model](/images/whatisosimodel.jpg "what is an osi model")
-<img src="/images/whatisosimodel.jpg" border="0"/>
+![what is OSI model](./images/whatisosimodel.jpg "what is an osi model")
+
+<img src="./images/whatisosimodel.jpg" border="0";/>
 
 In this project we will mainly focus on:
 
