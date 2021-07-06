@@ -34,7 +34,7 @@ Keep in mind that the OSI model is a concept, it’s not even tangible. The OSI 
 
 ![what is OSI model](./images/whatisosimodel.jpg "what is an osi model")
 
-<img src="./images/whatisosimodel.jpg" border="0";/>
+<img src="./images/whatisosimodel.jpg">
 
 In this project we will mainly focus on:
 
