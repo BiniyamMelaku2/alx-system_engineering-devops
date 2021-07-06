@@ -59,7 +59,7 @@ How is the OSI model organized?
 
 ## 1. Types of network  [ 1-types_of_network ]
 
-<img src="/images/typesnetwork.jpg" border="0">
+<img src="https://github.com/BiniyamMelaku2/alx-system_engineering-devops/blob/main/0x07-networking_basics/images/typesnetwork.jpg" border="0">
 
   LAN connect local devices together, WAN connects LANs together, and WANs are operating over the Internet.
 
@@ -83,7 +83,7 @@ What network do you use when you browse www.holbertonschool.com from your smartp
 
 ## 2. MAC and IP address  [ 2-MAC_and_IP_address ]
 
-<img src="/images/MAC_and_IP_address.jpg" border="0">
+<img src="https://github.com/BiniyamMelaku2/alx-system_engineering-devops/blob/main/0x07-networking_basics/images/MAC_and_IP_address.jpg" border="0">
 
 Questions:
 
@@ -101,7 +101,7 @@ What is an IP address?
 
 ## 3. UDP and TCP  [ 3-UDP_and_TCP ]
 
-<img src="/images/UDPandTCP.jpg" border="0">
+<img src="https://github.com/BiniyamMelaku2/alx-system_engineering-devops/blob/main/0x07-networking_basics/images/UDPandTCP.jpg" border="0">
 
 Questions:
 
@@ -171,7 +171,7 @@ $
 
 ## 5. Is the host on the network  [ 5-is_the_host_on_the_network ]
 
-<img src="/images/giphy.gif" border="0">
+<img src="https://github.com/BiniyamMelaku2/alx-system_engineering-devops/blob/main/0x07-networking_basics/images/giphy.gif" border="0">
 
   The Internet Control Message Protocol (ICMP) is a protocol in the Internet protocol suite. It is used by network devices, to check if other network devices are available on the network. The command ping uses ICMP to make sure that a network device remains online or to troubleshoot issues on the network.
 
