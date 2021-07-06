@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# listening to ports, Active Internet connections (only servers), Active UNIX domain sockets, Active Bluetooth connections 
+netstat --listening --program
