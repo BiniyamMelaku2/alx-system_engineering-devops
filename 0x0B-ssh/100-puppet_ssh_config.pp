@@ -7,5 +7,5 @@ file { '~/.ssh/config':
      HostName 34.139.184.21
      User root
      IdentityFile ~/.ssh/holberton',
-  mode    => '7000',
+  mode    => '0700';
 }
