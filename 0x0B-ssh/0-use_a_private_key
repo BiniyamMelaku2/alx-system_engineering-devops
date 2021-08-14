@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# to connect to your server using the private key ~/.ssh/holberton with the user ubuntu.
+# ssh -i ~/.ssh/holberton ubuntu@149-web-01
+ssh -i ~/.ssh/holberton ubuntu@34.139.184.21
+# cat ~/.ssh/id_rsa.pub | ssh ubuntu@149-web-01 "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
+
