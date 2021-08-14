@@ -5,7 +5,6 @@ file { '~/.ssh/config':
   path    => '~/.ssh/config'
   content => 'Host *
      HostName 34.139.184.21
-     User root
+     User 29026aabb769
      IdentityFile ~/.ssh/holberton',
-  mode    => '0700';
 }
