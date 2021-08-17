@@ -5,7 +5,7 @@ sudo apt-get install nginx -y
 sudo chown -R ubuntu:ubuntu /var/www/
 sudo chown -R ubuntu:ubuntu /etc/nginx
 if [ -f /var/www/html/index.nginx-debian.html ]; then
-	sudo echo "Holberton School" | sudo tee /var/www/html/index.nginx-debian.html
+	sudo echo "Holberton School for the win!" | sudo tee /var/www/html/index.nginx-debian.html
 fi;
 if [ -f /usr/share/nginx/html/index.html ]; then
 	sudo echo "Holberton School for the win!" | sudo tee /usr/share/nginx/html/index.html
