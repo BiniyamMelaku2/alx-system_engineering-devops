@@ -1,35 +1,37 @@
 # Installs and configures an Nginx server using Puppet instead of Bash
 
 exec { 'apt-get-update':
-  command => '/usr/bin/apt-get update'
+  command => 'sudo sudo apt-get update -y',
+  path    => ['/usr/bin', '/bin'],
+  returns => [0,1]
 }
 
-package { 'apache2.2-common':
-  ensure  => 'absent',
+exec { 'nginx':
   require => Exec['apt-get-update']
+  command => 'sudo sudo apt-get install nginx -y',
+  path    => ['/usr/bin', '/bin'],
+  returns => [0,1]
 }
 
-package { 'nginx':
-  ensure  => 'installed',
-  require => Package['apache2.2-common']
+exec { 'htmlcontent':
+  require => Exec['nginx']
+  command => 'echo "Holberton School for the win!" | sudo tee /var/www/html/index.nginx-debian.html',
+  path    => ['/usr/bin', '/bin'],
+  returns => [0,1]
 }
 
-service { 'nginx':
-  ensure  => 'running',
-  require => file_line['perform a redirection'],
+exec { 'htmlcontent':
+  require     => Exec['nginx']
+  environment => ['YY=youtube.com permanent'],
+  command     => 'sudo sed -i "s/server_name _;/server_name _;\n\trewrite ^\/redirect_me $YY;/" /etc/nginx/sites-enabled/default',
+  path        => ['/usr/bin', '/bin'],
+  returns     => [0,1]
 }
 
-file { '/var/www/html/index.nginx-debian.html':
-  ensure  => 'present',
-  content => 'Holberton School for the win!'
-  require => Package['nginx']
-}
 
-file_line { 'perform a redirection':
-  ensure  => 'present',
-  path    => '/etc/nginx/sites-enabled/default',
-  line    => 'rewrite ^/redirect_me/$ https://www.youtube.com\/watch\?v=w6E7aQnA4Ws permanent;',
-  after   => 'root /var/www/html;',
-  require => Package['nginx'],
-  notify  => Service['nginx'],
+exec { 'nginxstart':
+  require => Exec['htmlcontent']
+  command => 'sudo service nginx start',
+  path    => ['/usr/bin', '/bin', '/usr/sbin'],
+  returns => [0,1]
 }
