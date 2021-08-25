@@ -1,5 +1,5 @@
 # Web stack debugging
-====================
+
 System engineering & DevOps
 ---------------------------
 
