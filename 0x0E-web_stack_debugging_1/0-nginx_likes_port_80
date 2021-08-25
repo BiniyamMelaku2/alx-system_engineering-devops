@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# a Bash script that configures a server to run and listen on port 80 of all the server’s active IPv4 IPs
+sudo apt-get -y update
+sudo apt-get -y install nginx
+sudo ufw allow 'nginx http'
+sudo sed -i -e 's/8080/80/g' /etc/nginx/sites-enabled/default
+sudo service nginx restart
