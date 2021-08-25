@@ -12,6 +12,15 @@ Read or watch:
 * [puppet-creating-file-on-an-agent](https://stackoverflow.com/questions/54680582/puppet-creating-file-on-an-agent)
 * [Conditionally create a file in puppet](http://ryanuber.com/04-17-2010/conditional-file-creation-puppet.html)
 * [install-package](https://www.puppetcookbook.com/posts/install-package.html)
+* [PuppetTutorial](https://blog.example42.com/tutorials/PuppetTutorial/#slide-48)
+* [puppet-tutorial](https://www.tutorialandexample.com/puppet-tutorial)
+* [Puppet CookBook](https://www.puppetcookbook.com/posts/install-basic-docker-daemon.html)
+* [Learning Puppet Manifests files with Examples](https://www.youtube.com/watch?v=fToNBS9yxw8)
+* [Learning Puppet : Using exec for Executing System Commands ](https://www.youtube.com/watch?v=42PGr9gQbko)
+* [puppet tutorial installation on ubuntu,centos,fedora, linux](https://www.youtube.com/watch?v=j4331uoHIR8&list=PLrUFyg1unBb-mkbm_cWwHd0ziigVK2tzj&index=3)
+* [Puppet Tutorials and Courses](https://hackr.io/tutorials/learn-puppet)
+
+
 
 
 ## Install puppet-lint
