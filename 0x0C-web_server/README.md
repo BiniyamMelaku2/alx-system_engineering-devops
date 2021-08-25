@@ -79,6 +79,7 @@ Read or watch:
 * [Nginx.conf walkthrough & tweaking](https://www.youtube.com/watch?v=3vMIIekO45k)
 * [Creating NGINX Rewrite Rules](https://www.nginx.com/blog/creating-nginx-rewrite-rules)
 * [Nginx - rewrite or return for redirection?](https://serverfault.com/questions/407028/nginx-rewrite-or-return-for-redirection)
+* [nginx-rewrite-rule](https://raazkumar.com/tutorials/nginx/nginx-rewrite-rules/)
 * [Write Your Own Bash Scripts for Automation Tutorial](https://www.youtube.com/watch?v=PPQ8m8xQAs8)
 
 
