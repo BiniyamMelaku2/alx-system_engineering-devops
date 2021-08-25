@@ -75,6 +75,13 @@ Read or watch:
 * [HTTP redirection](https://moz.com/learn/seo/redirection)
 * [Not found HTTP response code](https://en.wikipedia.org/wiki/HTTP_404)
 * [Logs files on Linux](https://www.cyberciti.biz/faq/ubuntu-linux-gnome-system-log-viewer/)
+* [NGINX Linux Server | Common Configurations](https://www.youtube.com/watch?v=MP3Wm9dtHSQ)
+* [Nginx.conf walkthrough & tweaking](https://www.youtube.com/watch?v=3vMIIekO45k)
+* [Creating NGINX Rewrite Rules](https://www.nginx.com/blog/creating-nginx-rewrite-rules)
+* [Nginx - rewrite or return for redirection?](https://serverfault.com/questions/407028/nginx-rewrite-or-return-for-redirection)
+* [Write Your Own Bash Scripts for Automation Tutorial](https://www.youtube.com/watch?v=PPQ8m8xQAs8)
+
+
 For reference:
 
 * [RFC 7231 (HTTP/1.1)](https://datatracker.ietf.org/doc/html/rfc7231)
