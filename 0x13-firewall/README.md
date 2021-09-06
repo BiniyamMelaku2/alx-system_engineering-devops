@@ -5,6 +5,11 @@ Read or watch:
 
 * [What is a firewall](https://en.wikipedia.org/wiki/Firewall_%28computing%29)
 * [How to Install and Configure UFW – An Un-complicated FireWall](https://www.tecmint.com/how-to-install-and-configure-ufw-firewall/)
+* [How to Open a Port in Ubuntu Firewall](https://www.configserverfirewall.com/ufw-ubuntu-firewall/ubuntu-firewall-open-port/)
+* [how to forward single port to another port on different interface](https://unix.stackexchange.com/questions/248168/ufw-how-to-forward-single-port-to-another-port-on-different-interface)
+* [How to forward port 80 to another port on the samemachine?](https://serverfault.com/questions/320614/how-to-forward-port-80-to-another-port-on-the-samemachine)
+* [Redirect port 80 to 8080 and make it work on local machine](https://askubuntu.com/questions/444729/redirect-port-80-to-8080-and-make-it-work-on-local-machine)
+* [forward port 8080 (tomcat/jetty/...) to 80 on ubuntu using firewall](https://gist.github.com/jcharlet/2bc6a817ac807c4b37aaa0e3c63d79d1)
 
 ## More Info
 As explained in the web stack debugging guide concept page, telnet is a very good tool to check if sockets are open with telnet IP PORT. For example, if you want to check if port 22 is open on web-02:
