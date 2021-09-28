@@ -21,7 +21,7 @@ def count_words(subreddit, word_list, dictionary={}, end=None, init=False):
     base_url = "https://www.reddit.com"
     # set header
     headers = {
-        "User-Agent": "Ubuntu:playing with API (by /u/Cyber)"}
+        "User-Agent": "My User Agent 1.0"}
     # get sub-reddit info
     request_info = requests.get(
         base_url + '/r/{}/hot.json?after={}'.format(subreddit, end),
