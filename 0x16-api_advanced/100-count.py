@@ -5,45 +5,57 @@ parses the title of all hot articles, and prints a
 sorted count of given keywords (case-insensitive,
 delimited by spaces
 """
-import re
 import requests
-headers = {'user-agent': 'linux:taiebchaabini.tech:v1\
- (by /u/taiebchaabini)'}
 
 
-def count_words(subreddit, word_list, after='', occurs={}):
-    '''
-    Recursive function that queries the Reddit API, parses the title of all
-    '''
-    url = 'https://api.reddit.com/r/' + subreddit + '?limit=100&after=' + after
-    response = requests.get(url, headers=headers)
-    try:
-        data = response.json()
-    except Exception:
+def counter(letter, text, dictionary):
+    ''' count letters '''
+    for i in text.split():
+        if letter.lower() == i.lower():
+            dictionary[letter] += 1
+
+
+def count_words(subreddit, word_list, dictionary={}, end=None, init=False):
+    ''' prints the titles of the first 10 hot posts '''
+
+    base_url = "https://www.reddit.com"
+    # set header
+    headers = {
+        "User-Agent": "My User Agent 1.0"}
+    # get sub-reddit info
+    request_info = requests.get(
+        base_url + '/r/{}/hot.json?after={}'.format(subreddit, end),
+        headers=headers,
+        allow_redirects=False,
+        )
+    if request_info.status_code == 404:
         return
-    if (str(response.status_code) == '404'):
+    hottest = request_info.json().get("data").get("children")
+
+    # initialize dictionary
+    if not init:
+        for k in word_list:
+            dictionary[k] = 0
+    init = True
+    for i in hottest:
+        for e in word_list:
+            counter(e, i.get("data").get("title"), dictionary)
+    # check for exit
+    excheck = request_info.json().get("data").get("after")
+    if not excheck:
+        if len(set(list(dictionary.values()))) <= 1:
+            sorted_list = sorted(list(dictionary.items()))
+        else:
+            sorted_list = sorted(
+                            dictionary.items(),
+                            key=lambda x: x[1],
+                            reverse=True)
+        for key, val in sorted_list:
+            if val != 0:
+                print("{}: {}".format(key, val))
         return
-    dataLength = len(data['data']['children'])
-    if (dataLength == 0):
-        return
-    for i in range(0, dataLength):
-        try:
-            get_title = data['data']['children'][i]['data']['title']
-            for a in word_list:
-                try:
-                    occurs[a]
-                except KeyError:
-                    occurs[a] = 0
-                finally:
-                    occurs[a] += re.subn(r'(?i)(?<!\S)\b{}\b(?!\S)'.format(a),
-                                         '', get_title)[1]
-        except Exception:
-            pass
-    afterVal = data['data']['after']
-    if (afterVal is not None):
-        return count_words(subreddit, word_list, afterVal, occurs)
-    else:
-        for key in sorted(occurs, key=lambda k: (-occurs[k], k)):
-            if (occurs[key] > 0):
-                print("{}: {}".format(key, occurs[key]))
-        return
+    return count_words(subreddit, word_list, dictionary, excheck, init)
+
+
+if __name__ == "__main__":
+    number_of_subscribers()
