@@ -19,6 +19,11 @@ Read or watch:
 * [What is application monitoring](https://en.wikipedia.org/wiki/Application_performance_management)
 * [System monitoring by Google](https://sre.google/sre-book/monitoring-distributed-systems/)
 * [Nginx logging and monitoring](https://docs.nginx.com/nginx/admin-guide/monitoring/logging/)
+* [Datadog install, setup, Integrate](https://docs.datadoghq.com/)
+* [How to monitor Apache web server with Datadog](https://www.datadoghq.com/blog/monitor-apache-web-server-datadog/)
+* [API and Application Keys](https://docs.datadoghq.com/account_management/api-app-keys/)
+* [System Check](https://docs.datadoghq.com/integrations/system/)
+* [Alerting](https://docs.datadoghq.com/monitors/)
 
 # Tasks
 
