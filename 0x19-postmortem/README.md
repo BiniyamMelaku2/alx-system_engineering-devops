@@ -53,7 +53,7 @@ Read or watch:
 
 # Tasks
 
-## [0. My first postmortem](./)
+## [0. My first postmortem](./https://github.com/BiniyamMelaku2/alx-system_engineering-devops/blob/main/0x19-postmortem/Postmortem_%20Online.pdf)
 Using one of the web stack debugging project issue or an outage you have personally face, write a postmortem. Most of you will never have faced an outage, so just get creative and invent your own :)
 
 Requirements:
@@ -80,7 +80,7 @@ Requirements:
         a list of tasks to address the issue (be very specific, like a TODO, example: patch Nginx server, add monitoring on server memory…)
 * Be brief and straight to the point, between 400 to 600 words
 
-## [1. Make people want to read your postmortem](./)
+## [1. Make people want to read your postmortem](./https://github.com/BiniyamMelaku2/alx-system_engineering-devops/blob/main/0x19-postmortem/Postmortem_%20Online.pdf)
 We are constantly stormed by a quantity of information, it’s tough to get people to read you.
 
 Make your post-mortem attractive by adding humour, a pretty diagram or anything that would catch your audience attention.
