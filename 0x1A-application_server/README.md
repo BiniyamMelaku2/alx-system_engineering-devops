@@ -18,7 +18,8 @@ Read or watch:
 * [How to Install Python 3 on Ubuntu](https://www.itsupportwale.com/blog/how-to-upgrade-to-python-3-8-on-ubuntu-18-04-lts/)
 * [To install the latest released version of Gunicorn](https://docs.gunicorn.org/en/stable/install.html)
 * [How to build a Flask app with WSGI and Nginx](https://kevalnagda.github.io/flask-app-with-wsgi-and-nginx)
-
+* [Gunicorn as a SystemD service](https://bartsimons.me/gunicorn-as-a-systemd-service/)
+* [A better way to restart reload gunicorn](https://stackoverflow.com/questions/9881819/a-better-way-to-restart-reload-gunicorn-via-upstart-after-git-pulling-my-dja)
 
 
 ## Tasks
