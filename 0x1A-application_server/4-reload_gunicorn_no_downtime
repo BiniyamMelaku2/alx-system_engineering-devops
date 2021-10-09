@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
 # script to reload gunicorn
-sudo systemctl restart gunicorn
 sudo systemctl restart gunicorn3
